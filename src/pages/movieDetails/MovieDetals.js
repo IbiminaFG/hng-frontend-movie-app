@@ -43,8 +43,6 @@ const MovieDetals = () => {
 
   const utcReleaseDate = new Date(movie.release_date).toUTCString();
 
-  const hourRuntime = Math.floor(movie.runtime / 60);
-  const minRuntime = Math.floor(movie.runtime / 60) % 60;
   return (
     <section
       className="h-screen w-screen"
@@ -76,12 +74,10 @@ const MovieDetals = () => {
           <div className="flex items-center my-4 gap-3">
             <img src={imdb} alt="imdb logo" />
             <p data-testid="movie-release-date">{utcReleaseDate}.</p>
-            <p data-testid="movie-runtime">
-              {hourRuntime} hours {minRuntime} minutes
-            </p>
+            <p data-testid="movie-runtime">{movie.runtime}</p>
           </div>
           <h2 className="text-xl font-bold">Overview</h2>
-          <p>{movie.overview}</p>
+          <p data-testid="movie-runtime">{movie.overview}</p>
         </div>
       </div>
     </section>
