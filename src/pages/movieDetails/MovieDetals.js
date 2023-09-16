@@ -74,7 +74,7 @@ const MovieDetals = () => {
           <div className="flex items-center my-4 gap-3">
             <img src={imdb} alt="imdb logo" />
             <p data-testid="movie-release-date">{utcReleaseDate}.</p>
-            <p data-testid="movie-runtime">{movie.runtime}</p>
+            <p data-testid="movie-runtime">{movie.runtime} mins</p>
           </div>
           <h2 className="text-xl font-bold">Overview</h2>
           <p data-testid="movie-runtime">{movie.overview}</p>
