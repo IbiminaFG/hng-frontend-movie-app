@@ -59,7 +59,7 @@ const MovieDetals = () => {
         <img src={movieLogo} alt="movie logo" />
         <h2 className="font-bold">Movie Box</h2>
       </Link>
-      <div className="flex items-center h-[550px] px-4 lg:px-[70px] gap-10">
+      <div className="flex items-center h-[550px] px-4 lg:px-[70px] gap-10 bg-gray-400">
         <div className="max-w-[270px] rounded-xl overflow-hidden hover:scale-110 transition-transform duration-100 ease-in-out">
           <img
             className="w-full"
