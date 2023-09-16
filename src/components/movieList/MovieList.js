@@ -2,10 +2,7 @@ import Card from "../card/Card";
 import Loading from "../Loading";
 
 const MovieList = ({ topRated, loading, searchResult, errorMessage }) => {
-  const sortedArray = topRated
-    ? topRated.sort((a, b) => b.vote_count - a.vote_count)
-    : [];
-  const topTenMovies = sortedArray.slice(0, 10);
+  const topTenMovies = topRated.slice(0, 10);
   const movieList = topTenMovies.map((movie) => (
     <div key={movie.id}>
       <Card movie={movie} />
